@@ -1,0 +1,59 @@
+======================================================================
+  PHISHING DETECTION — PAPER-READY SUMMARY REPORT
+  'A Lightweight Hybrid Machine Learning Framework for
+   Phishing URL Detection and Classification'
+  Author: BE CSE, Chitkara University
+  Generated: 2026-05-13 19:52:15
+======================================================================
+
+── DATASET SUMMARY ─────────────────────────────────────────────────
+  Dataset 1 (PhiUSIIL)         : [235795, 55] rows×cols
+  Dataset 2 (Web Page Phishing): [11430, 89] rows×cols
+  Target Col DS1               : label
+  Target Col DS2               : status
+
+── MODEL PERFORMANCE COMPARISON ────────────────────────────────────
+  Model                       Accuracy Precision Recall  F1-Score ROC-AUC  Train(s)     Infer(ms/s)     
+  ------------------------------------------------------------------------------------------------------
+  Logistic Regression         0.9983   0.9980    0.9991  0.9985   1.0000   3.11         0.0004          
+  Random Forest               0.9996   0.9995    0.9999  0.9997   1.0000   43.88        0.0088          
+  XGBoost                     0.9997   0.9996    0.9999  0.9998   1.0000   3.75         0.0021          
+  Hybrid (Proposed)           0.9996   0.9995    0.9999  0.9997   1.0000   47.98        0.0104          
+
+  ★  BEST MODEL: XGBoost
+     Accuracy = 0.9997
+     F1-Score  = 0.9998
+     ROC-AUC   = 1.0000
+
+── CROSS-VALIDATION (5-Fold, F1-Weighted) ──────────────────────────
+  Logistic Regression           : 0.9985 ± 0.0001
+  Random Forest                 : 0.9998 ± 0.0001
+  XGBoost                       : 0.9998 ± 0.0000
+  Hybrid (Proposed)             : 0.9998 ± 0.0001
+
+── CROSS-DATASET VALIDATION ────────────────────────────────────────
+  RF (fresh DS2)                : Acc=0.9589, F1=0.9577
+  Hybrid (fresh DS2)            : Acc=0.9512, F1=0.9496
+
+── PLOT ARTIFACTS ──────────────────────────────────────────────────
+  accuracy_comparison.png     | multi_metric_comparison.png
+  roc_curves.png              | confusion_matrices.png
+  time_vs_accuracy.png        | cv_f1_boxplot.png
+  feature_importance_rf.png   | shap_summary.png
+  shap_bar.png                | shap_waterfall_example.png
+  inference_latency.png
+
+── RESEARCH PAPER MAPPING ──────────────────────────────────────────
+  Abstract          → comparison_table.csv (best model metrics)
+  Introduction      → EDA class imbalance stats
+  Dataset Desc      → Cell 5/6 printed stats
+  Methodology       → Cells 9–15 (preprocessing + model configs)
+  Results           → Cells 17–18 (table + all 7 plots)
+  Explainability    → Cell 19 (SHAP plots)
+  Cross-Dataset Val → Cell 20
+  Conclusion        → This report (summary_report.txt)
+  Future Work       → Real-time URL streaming; transformer-based tokenizer
+
+======================================================================
+  END OF REPORT
+======================================================================

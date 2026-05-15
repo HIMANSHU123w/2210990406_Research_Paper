@@ -1,0 +1,22 @@
+{
+  "method": [
+    "fresh_ds2",
+    "fresh_ds2"
+  ],
+  "model": [
+    "RF (fresh DS2)",
+    "Hybrid (fresh DS2)"
+  ],
+  "accuracy": [
+    0.9589,
+    0.9512
+  ],
+  "f1": [
+    0.9577,
+    0.9496
+  ],
+  "roc_auc": [
+    0.9922,
+    0.9906
+  ]
+}

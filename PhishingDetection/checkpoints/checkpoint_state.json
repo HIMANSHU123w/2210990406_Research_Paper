@@ -1,0 +1,37 @@
+{
+  "drive_mounted": true,
+  "dependencies_installed": true,
+  "datasets_downloaded": true,
+  "dataset1_loaded": true,
+  "dataset2_loaded": true,
+  "eda_done": true,
+  "eda_ds2_done": true,
+  "preprocessing_done": true,
+  "preprocessing_ds2_done": true,
+  "smote_done": true,
+  "lr_trained": true,
+  "rf_trained": true,
+  "xgb_trained": true,
+  "hybrid_trained": true,
+  "cv_done": true,
+  "results_consolidated": true,
+  "plots_done": true,
+  "shap_done": true,
+  "cross_dataset_done": true,
+  "inference_demo_done": true,
+  "final_save_done": false,
+  "metadata": {
+    "TARGET_COL_1": "label",
+    "TARGET_COL_2": "status",
+    "dataset1_shape": [
+      235795,
+      55
+    ],
+    "dataset2_shape": [
+      11430,
+      89
+    ]
+  },
+  "last_updated": "2026-05-13T19:33:47.376615",
+  "session_notes": ""
+}
